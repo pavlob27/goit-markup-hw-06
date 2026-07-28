@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
         integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
@@ -20,6 +21,11 @@
     <header class="header" id="header">
         <div class="container">
             <a class="logo" href="./index.html"><span class="accent-text">Web</span>Studio</a>
+            <button class="menu-btn" type="button">
+                <svg class="menu-btn-icon" width="24" height="24">
+                    <use href="./images/icons.svg#burger"></use>
+                </svg>
+            </button>
             <nav class="header-nav">
                 <ul class="header-nav-list">
                     <li><a class="header-nav-link features" href="#features">Features</a></li>
@@ -36,13 +42,13 @@
         </div>
     </header>
     <main>
-        <section class="hero" id="hero">
+        <section class="hero " id="hero">
             <div class="container">
                 <h1 class="hero-title">Effective Solutions for Your Business</h1>
                 <button class="hero-button" type="button">Order Service</button>
             </div>
         </section>
-        <section class="features" id="features">
+        <section class="features hide" id="features">
             <div class="container">
                 <h2 class="sr-only">Our features</h2>
                 <ul class="features-list">
@@ -89,7 +95,7 @@
                 </ul>
             </div>
         </section>
-        <section class="team" id="team">
+        <section class="team hide" id="team">
             <div class="container">
                 <h2 class="team-title">Our Team</h2>
                 <ul class="team-list">
@@ -245,7 +251,7 @@
                 </ul>
             </div>
         </section>
-        <section class="portfolio" id="portfolio">
+        <section class="portfolio hide" id="portfolio">
             <div class="container">
                 <h2 class="portfolio-title">Our Portfolio</h2>
                 <ul class="portfolio-list">
@@ -339,7 +345,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer" id="footer">
+    <footer class="footer hide" id="footer">
         <div class="container">
             <div class="footer-left">
                 <a class="logo" href="./index.html"><span class="accent-text">Web</span>Studio</a>
@@ -396,7 +402,58 @@
             </div>
         </div>
     </footer>
-    <div class="backdrop" id="modal">       
+    <div class="mobile-menu">
+        <button class="modal-btn" type="button">
+            <svg class="modal-btn-icon" width="8" height="8 ">
+                <use href="./images/icons.svg#close" />
+            </svg>
+        </button>
+        <nav class="menu-nav">
+          <ul class="menu-nav-list">
+               <li class="menu-nav-link"><a href="/">Studio</a></li>
+               <li class="menu-nav-link"><a href="/">Portfolio</a></li>
+               <li class="menu-nav-link"><a href="/">Contacts</a></li>
+            </ul>
+        </nav>
+        <address class="menu-addres">
+            <ul class="menu-addres-list">
+               <li class="menu-addres-link"><a href="/">+11 (000) 111-11-11</a></li>
+               <li class="menu-addres-link"><a href="/">info@devstudio.com</a></li>
+            </ul>
+        </address>
+        <ul class="social-icons">
+                    <li>
+                        <a href="./images/" class="icon-link">
+                            <svg width="24" height="24">
+                                <use href="./images/icons.svg#instagram" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./images/" class="icon-link">
+                            <svg width="24" height="24">
+                                <use href="./images/icons.svg#twitter" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./images/" class="icon-link">
+                            <svg width="24" height="24">
+                                <use href="./images/icons.svg#facebook" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./images/" class="icon-link">
+                            <svg width="24" height="24">
+                                <use href="./images/icons.svg#linkedin" />
+                            </svg>
+                        </a>
+                    </li>
+        </ul>
+
+    </div>
+    <div class="backdrop hide" id="modal">       
         <div class="modal">
             <button class="modal-btn" type="button">
                 <svg class="modal-btn-icon" width="8" height="8 ">
