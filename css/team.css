@@ -1,0 +1,51 @@
+.team-person-name {
+    padding-bottom:8px;
+    text-align: center;
+}
+.team-person-position {
+    text-align: center;
+    padding-bottom: 8px;
+}
+.team {
+    background-color: #F4F4FD;
+}
+.team-cart {
+    background-color: #FFFFFF;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+.team-list{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+}
+.team-title{
+    padding-bottom: 72px;
+}
+.team-wrapper{
+    padding: 32px 16px;
+}
+.social-icons {
+    display: flex;
+    gap: 24px;
+}
+.icon-link {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color: #4D5AE5;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team .icon-link svg use{
+    fill: #f4f4fd;
+}
+.team .icon-link:hover,
+.team .icon-link:focus{
+    background-color: #404BBF;
+}
