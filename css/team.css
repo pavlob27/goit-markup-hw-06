@@ -17,8 +17,23 @@
 .team-list{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    gap: 24px;
+    justify-content: center;
+    gap: 72px;
+    flex-direction: column;
+}
+@media only screen and (min-width: 768px) {
+  .team-list
+   {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .team-list
+   {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
 }
 .team-title{
     padding-bottom: 72px;

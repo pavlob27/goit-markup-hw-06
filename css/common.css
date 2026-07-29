@@ -78,7 +78,14 @@ img {
 .features,
 .team,
 .portfolio{
+    padding: 96px 0;
+}
+@media only screen and (min-width: 1158px) {
+  .features,
+  .team,
+  .portfolio{ 
     padding: 120px 0;
+  }
 }
 .sr-only {
     position: absolute;
