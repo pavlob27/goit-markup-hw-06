@@ -110,7 +110,7 @@
 
 .footer-form-feild {
     padding: 8px 16px;
-    width: 100%;
+    width: 288px;
     height: 40px;
 
     color: #fff;
@@ -127,6 +127,11 @@
     
     line-height: 1.16667;
         letter-spacing: 0.04em;
+}
+@media only screen and (min-width: 768px) {
+  .footer-form-feild {
+    width: 264px;
+  }
 }
 
 .footer-form-feild::placeholder {

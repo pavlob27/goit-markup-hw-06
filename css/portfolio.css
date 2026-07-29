@@ -13,7 +13,14 @@
     flex-wrap: wrap;
     row-gap: 72px;
   } 
-}.portfolio-title{
+}
+@media only screen and (min-width: 1158px) {
+  .portfolio-list {
+    column-gap: 24px;
+    row-gap: 48px;
+  } 
+}
+.portfolio-title{
     margin-bottom: 72px;
 }
 .portfolio-text-wrapper{
