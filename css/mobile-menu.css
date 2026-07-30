@@ -10,7 +10,7 @@
     visibility: hidden;
     pointer-events: none;
 
-    padding: 72px 16px 40px;
+    padding: 72px 0 40px;
     display: flex;
     flex-direction: column;
 }
