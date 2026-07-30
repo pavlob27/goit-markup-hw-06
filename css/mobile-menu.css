@@ -24,6 +24,11 @@
     display: none;
   }
 }
+.mobile-menu .container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
 .menu-nav {
     
 }
@@ -38,7 +43,7 @@
     font-weight: 700;
     font-size: 36px;
 
-    
+    letter-spacing: 0.02em;
     line-height: 1.11111;
     
     color: #2E2F42;
@@ -70,6 +75,7 @@
 
     line-height: 1.2;
     color: #434455;
+    letter-spacing: 0.02em;
 }
 .menu-addres-link:first-child{
     color: #4D5AE5; 
